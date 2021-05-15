@@ -1,0 +1,52 @@
+.footer-bar{
+    align-items: center;
+    justify-content: center;
+    padding: 26px; 
+}
+
+.img-icon{
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.img-mss{
+    width: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.menssage{
+    margin-top: 8px;
+    align-items: center;
+    display: flex;
+}
+
+.social-media{
+    display: flex;  
+    gap: 8px;
+}
+
+h3{
+    color: white;
+}
+
+
+h4{
+    color: white;
+}
+
+button{
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    transition: 200ms;
+    opacity:1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
