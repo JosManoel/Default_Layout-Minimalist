@@ -6,68 +6,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Default Layout</title>
 
-        <link rel="stylesheet" href="/styles/styles.css"/>
-        <link rel="stylesheet" href="/styles/index.css"/>
-
+        <link rel="stylesheet" href="/assets_page/styles/styles.css"/>
     </head>
 
     <body>
         <div class="container">
-            
             <header>
-                <iframe class="header" src="/assets/navigator_bar.html"></iframe>
+                <nav class="navigator-bar">
+                    <button class="repository-link" onclick="openRepository()">
+                        <img class="img-icon" src="/assets_page/icons/github.png" alt="GitHub Icon">
+                        <h3>Repositório</h3>
+                    </button>
+        
+                    <nav class="navigator-itens">
+                        <button onclick="toHome()">
+                            <h3>Início</h3>
+                        </button>
+                        <button onclick="toInfo()">
+                            <h3>Informações</h3>
+                        </button>
+                        <button onclick="toDownloads()">
+                            <h3>Downloads</h3>
+                        </button>
+                        <button onclick="themeMode()">
+                            <img class="img-icon" src="/assets_page/icons/dark_mode.png" alt="Dark Mode">
+                        </button>         
+                    </nav>
+                </nav>            
             </header>
 
             <home>
-                <div class="home">
-                    <div class="text">
-                        <div class="description">
-                            <div class="title">
-                                <h1>Default Layout Minimalist</h1>
-                            </div>
-    
-                            <div class="sub-title">
-                                <h2>Mussum Ipsum, cacilds vidis litro abertis.</h2>
-                            </div>
-                            
-                            <div class="technology">
-                                <img class="img-tech" src="/assets/technology/Default.png"> 
-                                <img class="img-tech" src="/assets/technology/Default.png"> 
-                                <img class="img-tech" src="/assets/technology/Default.png"> 
-                            </div>
-                            
-                            <div class="abstract">
-                                <p>
-                                Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
-                                </p>
-                                <p>
-                                Quem num gosta di mé, boa gentis num é. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Aenean aliquam molestie leo, vitae iaculis nisl.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>
-            
-                    <div class="images">
-                        <button onclick="back()">
-                            <img class="nav-icon" src="/assets/icons/back.png">
-                        </button>
-
-                        <div id="home-image">
-                            <img class="selected" src="/assets/images/Image4.png">
-                            <img src="/assets/images/Image5.png">
-                            <img src="/assets/images/Image6.png">
-                        </div>
-
-                        <button onclick="next()">
-                            <img class="nav-icon" src="/assets/icons/next.png">
-                        </button>
-                        <script src="/scripts/slider.js"></script>
-                    </div>
-                </div>
+                <iframe id="iframe" src="/assets_page/page/home.html" height="" width="100%"></iframe>
             </home>
 
             <footer>
-                <iframe class="footer" src="/assets/footer.html"></iframe>
+                <div class="footer-bar">
+                    <nav class="social-media">
+                        <button onclick="toGitHub()">
+                            <img class="img-icon" src="/assets_page/icons/social_github.png">
+                            <h5>josmanoel</h5>
+                        </button>
+                        <button onclick="toLinkedin()">
+                            <img class="img-icon" src="/assets_page/icons/social_linkedin.png">
+                            <h5>www.linkedin.com/in/josmanoel</h5>
+                        </button>
+                        <button onclick="toEmail()">
+                            <img class="img-icon" src="/assets_page/icons/social_email.png">
+                            <h5>josmanoelfreitas2012@gmail.com</h5>   
+                        </button>
+                    </nav>
+                    
+                    <div class="menssage">
+                        <h4>Feito por JosManoel com</h4>
+                        <img class="img-mss" src="/assets_page/icons/coffe.png">
+                        <h4>,</h4>
+                        <img class="img-mss" src="/assets_page/icons/headset.png">
+                        <h4> e</h4>
+                        <img class="img-mss" src="/assets_page/icons/laptop.png">
+                        <h4>.</h4>
+                    </div>
+                </div>
             </footer>
         </div>
     </body>
