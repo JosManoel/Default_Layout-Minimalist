@@ -13,21 +13,30 @@
         <div class="container">
             <header>
                 <nav class="navigator-bar">
-                    <button class="repository-link" onclick="openRepository()">
-                        <img class="img-icon" src="/assets_page/icons/github.png" alt="GitHub Icon">
-                        <h3>Repositório</h3>
-                    </button>
+                    <div>
+                        <button class="repository-link" onclick="openRepository()">
+                            <img class="img-icon" src="/assets_page/icons/github.png" alt="GitHub Icon">
+                            <h3>Repositório</h3>
+                        </button>
+
+                        <button class="hamburguer-menu" onclick="openAmburguerMenu()">
+                        <img class="img-icon" src="/assets_page/icons/menu_hamburguer.png">
+                        </button>
+                    </div>
         
                     <nav class="navigator-itens">
                         <button onclick="toHome()">
                             <h3>Início</h3>
                         </button>
+
                         <button onclick="toInfo()">
                             <h3>Informações</h3>
                         </button>
+
                         <button onclick="toDownloads()">
                             <h3>Downloads</h3>
                         </button>
+
                         <button onclick="themeMode()">
                             <img class="img-icon" src="/assets_page/icons/dark_mode.png" alt="Dark Mode">
                         </button>         
