@@ -7,6 +7,8 @@
         <title>Default Layout</title>
 
         <link rel="stylesheet" href="/assets_page/styles/styles.css"/>
+        <script src="/assets_page/scripts/open_menu.js"></script>
+
     </head>
 
     <body>
@@ -15,16 +17,17 @@
                 <nav class="navigator-bar">
                     <div>
                         <button class="repository-link" onclick="openRepository()">
-                            <img class="img-icon" src="/assets_page/icons/github.png" alt="GitHub Icon">
+                            <img class="icon-navigator" src="/assets_page/icons/github.png" alt="GitHub Icon">
                             <h3>Repositório</h3>
                         </button>
 
-                        <button class="hamburguer-menu" onclick="openAmburguerMenu()">
-                        <img class="img-icon" src="/assets_page/icons/menu_hamburguer.png">
+                        <button class="hamburguer-menu" onclick="openMenu('hamburguerMenu','openMenu','/assets_page/icons/close.png', '/assets_page/icons/menu_hamburguer.png')">
+
+                        <img class="icon-navigator" id="openMenu" src="/assets_page/icons/menu_hamburguer.png">
                         </button>
                     </div>
         
-                    <nav class="navigator-itens">
+                    <nav class="navigator-itens" id="hamburguerMenu">
                         <button onclick="toHome()">
                             <h3>Início</h3>
                         </button>
@@ -39,7 +42,8 @@
 
                         <button onclick="themeMode()">
                             <img class="img-icon" src="/assets_page/icons/dark_mode.png" alt="Dark Mode">
-                        </button>         
+                        </button> 
+                        
                     </nav>
                 </nav>            
             </header>
@@ -52,15 +56,15 @@
                 <div class="footer-bar">
                     <nav class="social-media">
                         <button onclick="toGitHub()">
-                            <img class="img-icon" src="/assets_page/icons/social_github.png">
+                            <img class="icon-footer" src="/assets_page/icons/social_github.png">
                             <h5>josmanoel</h5>
                         </button>
                         <button onclick="toLinkedin()">
-                            <img class="img-icon" src="/assets_page/icons/social_linkedin.png">
+                            <img class="icon-footer" src="/assets_page/icons/social_linkedin.png">
                             <h5>www.linkedin.com/in/josmanoel</h5>
                         </button>
                         <button onclick="toEmail()">
-                            <img class="img-icon" src="/assets_page/icons/social_email.png">
+                            <img class="icon-footer" src="/assets_page/icons/social_email.png">
                             <h5>josmanoelfreitas2012@gmail.com</h5>   
                         </button>
                     </nav>

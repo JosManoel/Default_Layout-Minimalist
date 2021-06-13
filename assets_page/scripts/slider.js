@@ -42,7 +42,6 @@ let time = 6000,
             currentImageIndex = 0
 
         images[currentImageIndex].classList.add("selected")
-        console.log(currentImageIndex)      
     }
   
     function start(){

@@ -4,8 +4,10 @@ html, body{
     display:flex;
     height:100%;
     width: 100%;
+    -webkit-tap-highlight-color: transparent; 
     /*background: linear-gradient(180deg, #FFFFFF 64.34%, #E5E5E5 77.67%);*/
 }
+
 
 *{
     margin: 0;
@@ -94,6 +96,12 @@ header{
     width: 100%;
 }
 
+.icon-navigator{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 .navigator-bar{align-items:center;}
 
 .navigator-bar:after {
@@ -117,7 +125,7 @@ header{
 .navigator-bar nav:last-child{margin-left: auto;}
 
 .navigator-itens{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: left;
     margin-top: 16px;
@@ -149,7 +157,7 @@ footer{
     padding: 26px; 
 }
 
-.img-icon{
+.icon-footer{
     width: 18px;
     height: 18px;
     margin-right: 8px;
@@ -192,12 +200,17 @@ footer{
 @media (max-width:568px) {
 
     /* ------------ NavigatorBar ---------- */
-   .navigator-bar div .img-icon{
-    width: 28px;
-    height: 28px;
+   .navigator-bar div .icon-navigator{
+        width: 28px;
+        height: 28px;
+        margin-left: 8px;
+        margin-right: 0px;
     } 
     .navigator-bar div{
-        padding: 8px;
+        /*padding: 8px;*/
+        padding-top: 8px;
+        /*padding-left: 8px;*/
+        padding-bottom: 8px;
         box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -216,6 +229,7 @@ footer{
     .navigator-bar{
         display: flex;
         margin-left: 8px;
+        margin-right: 8px;
         padding: 10px;
     }
 

@@ -8,52 +8,62 @@
 
         <link rel="stylesheet" href="/assets_page/styles/home.css"/>
         <script src="/assets_page/scripts/iframe_height.js"></script>
+
     </head>
 
     <body>
         <div id="iframePage" class="container">
             <div class="home">
-                <div class="text">
-                    <div class="title">
-                        <h1>Default Layout Minimalist</h1>
-                    </div>
 
-                    <div class="sub-title">
-                        <h3>Mussum Ipsum, cacilds vidis litro abertis.</h3>
-                    </div>
-                    
-                    <div class="technology">
-                        <img class="img-tech" src="/assets_page/icons/technology/Default.png"> 
-                        <img class="img-tech" src="/assets_page/icons/technology/Default.png"> 
-                        <img class="img-tech" src="/assets_page/icons/technology/Default.png"> 
-                    </div>
-                    
-                    <div class="abstract">
-                        <p>
-                        Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
-                        </p>
-                        <p>
-                        Quem num gosta di mé, boa gentis num é. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Aenean aliquam molestie leo, vitae iaculis nisl.
-                        </p>
-                    </div>  
-                </div>
+                <div class="home-page">
+
+                    <div class="home-text">
+                        <div class="text">
+                            <div class="title">
+                                <h1>Default Layout Minimalist</h1>
+                            </div>
         
-                <div class="images">
-                    <button onclick="back()">
-                        <img class="nav-icon" src="/assets_page/icons/back.png">
-                    </button>
-
-                    <div id="home-image">
-                        <img class="selected" src="/assets_page/images/Image4.png">
-                        <img src="/assets_page/images/Image5.png">
-                        <img src="/assets_page/images/Image6.png">
+                            <div class="sub-title">
+                                <h3>Mussum Ipsum, cacilds vidis litro abertis.</h3>
+                            </div>
+                            
+                            <div class="tech-used">
+                                <img class="tech-img" src="/assets_page/icons/technology/Default.png"> 
+                                <img class="tech-img" src="/assets_page/icons/technology/Default.png"> 
+                                <img class="tech-img" src="/assets_page/icons/technology/Default.png"> 
+                            </div>
+                            
+                            <div class="abstract">
+                                <p>
+                                Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Si num tem leite então bota uma pinga aí cumpadi! Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
+                                </p>
+                                <p>
+                                Quem num gosta di mé, boa gentis num é. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Cevadis im ampola pa arma uma pindureta. Aenean aliquam molestie leo, vitae iaculis nisl.
+                                </p>
+                            </div>  
+                        </div>
                     </div>
+            
+                    <div class="home-image">
+                        <div class="images">
+                            <img id="imageSlide" src="/assets_page/images/Image4.png">
+                        </div>
+    
+                        <div class="nav-images">
+                            <button onclick="backImage()">
+                                <img class="nav-icon" src="/assets_page/icons/back.png">
+                            </button>
+                            
+                            <button onclick="nextImage()">
+                                <img class="nav-icon" src="/assets_page/icons/next.png">
+                            </button>
+                        </div>
 
-                    <button onclick="next()">
-                        <img class="nav-icon" src="/assets_page/icons/next.png">
-                    </button>
-                    <script src="/assets_page/scripts/slider.js"></script>
+                        <script src="/assets_page/scripts/slider123.js"></script>
+                    </div>  
+                        
                 </div>
+
             </div>
         </div>
     </body>

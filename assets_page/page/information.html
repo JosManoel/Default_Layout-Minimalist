@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="/assets_page/styles/information.css"/>
         <script src="/assets_page/scripts/iframe_height.js"></script>
+        <script src="/assets_page/scripts/open_menu.js"></script>
     </head>
 
     <body>
@@ -18,32 +19,42 @@
                         <div class="title">
                             <h2>Default Layout Minimalist</h2>
                         </div>
-    
-                        <hr size="4px">
-    
-                        <nav class="index">
-                            <button onclick="toLinkInter('#LoremIpsum')">
-                                <h3>Lorem Ipsum</h3>
+                        
+                        <hr style="height: 2px;">
+
+                        <div>
+                            <button onclick="openMenu('index','openIndex','/assets_page/icons/up.png','/assets_page/icons/down.png')">
+                                <img class="nav-icon" id="openIndex" src="/assets_page/icons/down.png" alt="">
                             </button>
-                            
-                            <nav>
+                        </div>
+                        
+        
+                            <nav class="index" id="index">
                                 <button onclick="toLinkInter('#LoremIpsum')">
-                                    <h4>Lorem Ipsum saf</h4>
+                                    <h3>Lorem Ipsum</h3>
                                 </button>
-                            </nav>       
-                        </nav>
-    
-                        <hr size="4px">
+                                
+                                <nav>
+                                    <button onclick="toLinkInter('#LoremIpsum')">
+                                        <h4>Lorem Ipsum saf</h4>
+                                    </button>
+                                </nav>       
+                            </nav>
+
+                        <hr style="height: 2px;">
                     </div>
     
                     <div class="article">       
                         <p class="text">   
                             Goomba Bowser game pak fireball, game pak sprite pixel invincible Luigi RGB pixel side-scrolling slide lava, castle radio frequency modulator game over koopa troopa 1-up. RGB super mushroom sprite invincible Mario, Mario Bros spiny. Pixel invincible Mario B-button game pak. Fire flower blooper PAL select button swim.
                         </p>
+                        <img style= "width: 200px;" src="/assets_page/images/Image1.png">
 
                         <p class="text">   
                             Goomba Bowser game pak fireball, game pak sprite pixel invincible Luigi RGB pixel side-scrolling slide lava, castle radio frequency modulator game over koopa troopa 1-up. RGB super mushroom sprite invincible Mario, Mario Bros spiny. Pixel invincible Mario B-button game pak. Fire flower blooper PAL select button swim.
                         </p> 
+                        
+                        <img style= "width: 200px;" src="/assets_page/images/Image1.png">
                         
                         <p class="text">   
                             Goomba Bowser game pak fireball, game pak sprite pixel invincible Luigi RGB pixel side-scrolling slide lava, castle radio frequency modulator game over koopa troopa 1-up. RGB super mushroom sprite invincible Mario, Mario Bros spiny. Pixel invincible Mario B-button game pak. Fire flower blooper PAL select button swim.
