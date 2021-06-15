@@ -73,6 +73,7 @@
     transition: 200ms;
 }
 
+
 @media (max-width: 568px){
 
     .home-page{
@@ -85,6 +86,11 @@
 }
 
 @media (min-width: 568px){
+
+    .nav-icon{
+        height: 32px;
+    }
+    
     .home-page{
         padding-top: 32px;
     }

@@ -1,12 +1,13 @@
-function toHome(){
 
+function toHome(){
+    document.getElementById("iframe").setAttribute('src','/assets_page/page/home.html');
 }
 
 function toInfo(){
-
+    document.getElementById("iframe").setAttribute('src','/assets_page/page/information.html');
 }
 
-function toDownload(){
+function toDownloads(){
     document.getElementById("iframe").setAttribute('src','/assets_page/page/downloads.html');
 }
 

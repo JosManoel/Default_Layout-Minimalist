@@ -1,55 +1,49 @@
-let time = 6000,
-    currentImageIndex = 0,
-    images = document.querySelectorAll("#home-image img")
-    max = images.length;
-    var slider;
+image_slide = document.getElementById("imageSlide");
+var index_image = 0;
+var sliderInterval;
+var image_list = [
+    '/assets_page/images/Image4.png', 
+    '/assets_page/images/Image5.png', 
+    '/assets_page/images/Image6.png'
+];
 
-    function clearSelected(){
-        clearInterval(slider);
-        images[currentImageIndex].classList.remove("selected")
+function changeImage(image, array_image, index){
+    image.src = array_image[index];
+}
+
+function indexImage(index){
+
+    if(index !== 'undefined'){
+        if(index_image == (image_list.length - 1)){
+            index_image = 0;
+        }else{
+            index_image++;
+        }
+    }else{
+        index_image = index;
     }
+    changeImage(image_slide, image_list, index_image);
+    return index_image;
+}
 
-    function setSelected(){
-        images[currentImageIndex].classList.add("selected")
-        start()
-    }
+function backImage(){    
+    clearInterval(sliderInterval);
+    indexImage(indexImage - 1, image_list);
+    start();
+}
 
-    function next(){
-        clearSelected()
+function nextImage(){
+    clearInterval(sliderInterval);
+    indexImage(indexImage + 1, image_list);
+    start();
+}
 
-        if(currentImageIndex >= (max-1)){
-            currentImageIndex = 0
-        } else {currentImageIndex++}
+function start(){
+    
+    sliderInterval = setInterval(() => {
+        indexImage();
+    },5000)
+}
 
-        setSelected()
-    }
-
-    function back(){
-        clearSelected()
-
-        if(currentImageIndex == 0){
-            currentImageIndex = max -1
-        } else {currentImageIndex--}
-
-        setSelected()
-    }
- 
-    function nextImage(){
-        images[currentImageIndex].classList.remove("selected")
-        currentImageIndex++
-
-        if(currentImageIndex >= max)
-            currentImageIndex = 0
-
-        images[currentImageIndex].classList.add("selected")
-    }
-  
-    function start(){
-        slider = setInterval(() => {
-            nextImage()
-        }, time)
-    }
-
-    window.addEventListener("load",start)
-
+window.addEventListener("load",start);
 

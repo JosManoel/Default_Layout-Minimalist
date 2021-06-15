@@ -3,16 +3,13 @@ window.onload = function(){
     setTimeout(resizeIframe(),5000);
 }
 
-
 window.onclick = function(){
     resizeIframe();
 }
 
-
 function calcIframeHeight(){
     return document.getElementById("iframePage").scrollHeight;
 }
-
 
 function resizeIframe(){
     var iframeHeight = calcIframeHeight();
@@ -25,12 +22,9 @@ function resizeIframe(){
         }else{
             parentHeight.height = firstLoadIframe;
         }
-        
-        console.log("tamanho inicial: " + firstLoadIframe)
-        console.log("tamanho da tela: " + parentHeight.height)
-        console.log("tamanho do iframe: " + iframeHeight)
     }
  }
+
 
 // O Bug de resize do iframe acontece pq no teste a conexão nao é https,onde o chrome nao carrega completamente o iframe, diferente do firefox e do opera. por isso funciona neles e no chrome nao.
 
