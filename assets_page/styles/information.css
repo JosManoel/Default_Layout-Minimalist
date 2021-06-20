@@ -1,6 +1,5 @@
 @import url(/assets_page/styles/styles.css);
 
-
 .home{
     display: flex;
     padding-top: 32px;
@@ -53,6 +52,8 @@
 
 .article .text:not(:first-child){margin-top: 32px;}
 
+.footer-bar{padding: 16px;}
+
 .nav-icon{
     width: 30px;
     height: 30px;
@@ -60,23 +61,15 @@
 
 
 @media (min-width: 568px){
-    .index{
-        display: flex
-    }
+    .index{display: flex}
 
-    .nav-icon{
-        display: none;
-    }
+    .nav-icon{display: none;}
 
-    .information{
-        display: flex;
-    }
+    .information{display: flex;}
 
     .summary{width: 25%;}
 
-    .summary div:last-child{
-        display: block;
-    }
+    .summary div:last-child{display: block;}
 
     .article{
         width: 80%;

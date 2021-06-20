@@ -102,4 +102,20 @@
         -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
+
+    /* --------------- Footer ------------- */
+    .menssage{
+        margin-top: 8px;
+        justify-content: left;
+    }
+
+    .social-media{display: flex;}
+
+    .social-media button{margin-top: 0px;}
+
+    .social-media button:hover{
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+    }
 }
