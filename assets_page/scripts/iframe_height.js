@@ -1,14 +1,13 @@
-window.onload = function(){
-    setTimeout(calcIframeHeight(),500);
-}
+window.onload = function(){calcIframeHeight();}
 
-window.onclick = function(){
-    calcIframeHeight();
-}
+window.onclick = function(){calcIframeHeight();}
 
 function calcIframeHeight(){
-    let iframe = document.getElementById("iframePage").scrollHeight;
-    let parentIframe = parent.document.getElementById("iframe");
+    parent.document.getElementById("iframe").setAttribute('height',getIframeHeight());
 
-    parentIframe.height = iframe;
+    console.log(getIframeHeight())
+}
+
+function getIframeHeight(){
+    return document.getElementById("iframePage").scrollHeight;
 }
