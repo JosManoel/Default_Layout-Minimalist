@@ -1,0 +1,20 @@
+.article div{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article p{
+    font-size: 1rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.article h1{
+    font-size: 2rem;
+}
+
+.article h2{
+    font-size: 1.3rem;
+}
