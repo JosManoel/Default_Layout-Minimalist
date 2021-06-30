@@ -3,7 +3,7 @@ function toHome(){
 }
 
 function toInfo(){
-    parent.window.location.href = "/documentation/documentation.html"
+    parent.window.location.href = "/documentation/documentation_page.html"
 }
 
 function toDownloads(){

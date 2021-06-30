@@ -11,10 +11,15 @@
     margin-bottom: 16px;
 }
 
-.article h1{
+.title{
     font-size: 2rem;
 }
 
-.article h2{
+.subtitle{
     font-size: 1.3rem;
+}
+
+.summary a{
+    color: black;
+    text-decoration: none;
 }

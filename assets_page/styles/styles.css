@@ -3,6 +3,7 @@
 html, body{
     height:100%;
     width: 100%;
+    scroll-behavior:smooth;
     -webkit-tap-highlight-color: transparent; 
     /*background: linear-gradient(180deg, #FFFFFF 64.34%, #E5E5E5 77.67%);*/
 }
@@ -15,7 +16,6 @@ html, body{
 }
 
 button{
-    width: 40;
     background: none;
     cursor: pointer;
 }
