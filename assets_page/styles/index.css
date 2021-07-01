@@ -46,6 +46,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: 200ms;
 }
 
 .images img {
@@ -67,6 +68,9 @@
     transition: 200ms;
 }
 
+.footer-bar a{
+    text-decoration: none;
+}
 
 @media (max-width: 568px){
     .menssage{margin-top: 24px;}

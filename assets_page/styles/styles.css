@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
+
 html, body{
     height:100%;
     width: 100%;
     scroll-behavior:smooth;
-    -webkit-tap-highlight-color: transparent; 
-    /*background: linear-gradient(180deg, #FFFFFF 64.34%, #E5E5E5 77.67%);*/
 }
 
 *{
@@ -120,7 +119,7 @@ footer{
 
 .social-media h5{color: white;}
 
-.social-media button{
+.social-media a{
     display: flex;
     margin-top: 8px;
     align-items: center;
@@ -128,7 +127,7 @@ footer{
     opacity: 0.6;
 }
 
-.social-media button:hover{
+.social-media a:hover{
     transition: 200ms;
     opacity:1;
 }

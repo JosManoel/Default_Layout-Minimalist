@@ -41,7 +41,6 @@ body{
     gap: 24px;
 }
 
-.navigator-itens hr{background-color: rgba(70, 70, 70, 0.226);}
 
 .repository-link{
     display: flex;

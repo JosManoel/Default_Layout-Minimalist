@@ -8,10 +8,12 @@ var image_list = [
 ];
 
 function changeImage(image, array_image, index){
+    
     image.src = array_image[index];
 }
 
 function indexImage(index){
+    
 
     if(index !== 'undefined'){
         if(index_image == (image_list.length - 1)){

@@ -1,5 +1,4 @@
 @import url(/assets_page/styles/styles.css);
-@import url(/assets_page/styles/article.css);
 
 .home{
     display: flex;
@@ -54,6 +53,32 @@
     background-color: #F3F3F3; 
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.1)); 
 }    
+
+.article div{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article p{
+    font-size: 1rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 1.3rem;
+}
+
+.summary a{
+    color: black;
+    text-decoration: none;
+}
 
 .footer-bar{padding: 16px;}
 

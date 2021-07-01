@@ -10,19 +10,4 @@ function toDownloads(){
     parent.window.location.href = "/downloads/downloads.html"
 }
 
-function toGitHub(){
-
-}
-
-function toLinkedin(){
-
-}
-
-function toEmail(){
-
-}
-
-function themeMode(){
-    
-}
 
