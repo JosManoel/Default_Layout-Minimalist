@@ -10,4 +10,7 @@ function toDownloads(){
     parent.window.location.href = "/downloads/downloads.html"
 }
 
+function openRepository(){
+    parent.window.location.href ="https://github.com/JosManoel/Default_Layout-Minimalist"
+}
 
