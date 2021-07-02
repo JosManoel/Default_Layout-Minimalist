@@ -112,7 +112,7 @@ Durante os estudos pude observar a flexibilidade de utilização do javascript, 
 
 ### 📝 Licença
 
-Este projeto está sobe a licença [***](#).
+Este projeto está sobe a licença [MIT](https://github.com/JosManoel/Default_Layout-Minimalist/blob/main/LICENSE).
 
 
 
